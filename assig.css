@@ -59,6 +59,7 @@ html{
     position: absolute;
     width: 100%; 
     /* height: 10vh; */
+    border: 1px solid rgba(211, 211, 211, 0.725);
     background-color: white;
     display: flex;
     justify-content: space-between; align-items: center;
@@ -89,16 +90,21 @@ html{
 }
 .box{
     /* position: relative; taki m right wale ki lower div to neeche stick kr pau */
+    position: relative;
     text-align: left;
     font-size: 0.6rem; line-height: 0.9rem;
 
     height: auto; width: 40%; 
     /* background-color: aqua;  */
-     padding: 1rem;
+    padding: 1rem;
     margin: 5%; 
-    margin-top: 4vh; 
+    margin-top: 8vh; 
     margin-bottom: 0%;
     flex: 1 1 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 .box:first-child{
@@ -114,11 +120,13 @@ html{
 .lower_box{ 
     height: auto; width: 100%; 
     /* background-color: green;  */
+
 }
-/* .lower_box:last-child{position: absolute;bottom: 0;} */
 #device_img{ 
-    height: auto; max-height: 30vh;
-    width: 80%; object-fit: cover;
+    height: auto; 
+    max-height: 25vh;
+    min-height: 15vh;
+    object-fit: cover;
 }
 
 footer{
